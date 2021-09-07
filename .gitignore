@@ -20,6 +20,8 @@
 # misc
 .DS_Store
 *.pem
+/.yarn
+.yarnrc
 
 # debug
 npm-debug.log*
