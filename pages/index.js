@@ -1,4 +1,4 @@
-//import Head from 'next/head'
+import Head from 'next/head'
 //import Image from 'next/image'
 import React from 'react'
 import 'tailwindcss/tailwind.css'
@@ -20,7 +20,7 @@ export default class Home extends React.Component {
         this.getIpInfo = this.getIpInfo.bind(this)
     }
 
-    getIpInfo(ip, data) {        
+    getIpInfo(ip, data) {
         const info = data.info
         const location = info.location
         this.setState({
@@ -34,12 +34,17 @@ export default class Home extends React.Component {
     }
 
     render() {
-        const {ip, isp, location, timezone, position} = this.state
+        const { ip, isp, location, timezone, position } = this.state
+        const pageTitle = 'Ip Address Tracker';
 
         return (
             <div className="flex flex-col h-screen max-width-1440">
+                <Head>
+                    <title>{pageTitle}</title>
+                    <meta property="og:title" content={pageTitle} key="title" />
+                </Head>
                 <Header getIpInfo={this.getIpInfo} />
-                <Info 
+                <Info
                     ip={ip}
                     location={location}
                     timezone={timezone}
