@@ -1,8 +1,6 @@
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
-import "leaflet-defaulticon-compatibility";
 import iconLocation from '../public/icon-location.svg'
 
 const centerPosition = [45.398066, 26.885366]

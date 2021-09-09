@@ -42,6 +42,10 @@ export default class Home extends React.Component {
                 <Head>
                     <title>{pageTitle}</title>
                     <meta property="og:title" content={pageTitle} key="title" />
+                    <meta name="theme-color" content="#90cdf4" />
+                    <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />
+                    <link rel="manifest" href="/manifest.json" />
+                    <link rel="apple-touch-icon" href="/logo/logo-96x96.png" />
                 </Head>
                 <Header getIpInfo={this.getIpInfo} />
                 <Info
