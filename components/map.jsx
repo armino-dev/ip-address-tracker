@@ -18,12 +18,7 @@ export default class Map extends React.Component {
         this.setMap = this.setMap.bind(this)
     }
 
-    componentDidMount() {
-        document.title = `From props: Latitude: ${this.props.position[0]}, Longitude: ${this.props.position[1]}`;
-    }
-
     componentDidUpdate() {
-        document.title = `From props: Latitude: ${this.props.position[0]}, Longitude: ${this.props.position[1]}`;
         this.state.map.setView(this.props.position)
     }
 
