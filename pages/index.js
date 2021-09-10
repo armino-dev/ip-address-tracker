@@ -38,7 +38,7 @@ export default class Home extends React.Component {
         const pageTitle = 'Ip Address Tracker';
 
         return (
-            <div className="flex flex-col h-screen max-width-1440">
+            <div className="flex flex-col h-screen w-full">
                 <Head>
                     <title>{pageTitle}</title>
                     <meta charSet="utf-8" />
