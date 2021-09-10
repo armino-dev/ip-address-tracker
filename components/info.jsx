@@ -10,7 +10,7 @@ export default class Info extends React.Component {
         const {ip, location, timezone, isp} = this.props
         return (
             <div 
-                className="absolute h-[338px] top-[146px] p-5 lg:p-0 lg:h-[160px] lg:top-[200px] w-full flex flex-row items-center justify-center max-width-1440 z-40"
+                className="absolute h-[338px] top-[146px] p-5 lg:p-0 lg:h-[160px] lg:top-[200px] w-full flex flex-row items-center justify-center z-40"
             >
                 <div 
                     className="flex flex-col w-full h-full p-5 lg:p-2 lg:pt-[34px] lg:w-full lg:mx-[165px] lg:flex-row bg-gradient-to-b from-gray-200 to-white rounded-2xl lg:rounded-[15px] items-center lg:items-start justify-between lg:justify-start"

@@ -22,21 +22,8 @@ a {
   box-sizing: border-box;
 }
 
-#header {
-    height: 280px;
-}
-
-#info {
-    height: 160px;
-    top: 200px;
-}
-
 .pattern-bg {
     background-image: url('../public/pattern-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.max-width-1440 {
-    max-width: 1440px;
 }
