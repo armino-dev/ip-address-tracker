@@ -41,6 +41,14 @@ export default class Home extends React.Component {
             <div className="flex flex-col h-screen max-width-1440">
                 <Head>
                     <title>{pageTitle}</title>
+                    <meta charSet="utf-8" />
+                    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+                    <meta
+                        name="viewport"
+                        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5,user-scalable=yes"
+                    />
+                    <meta name="description" content="Ip Address Tracker - An app build for frontendmentor.com challange." />
+                    <meta name="keywords" content="ip address tracker, frontend mentor" />
                     <meta property="og:title" content={pageTitle} key="title" />
                     <meta name="theme-color" content="#90cdf4" />
                     <meta name="apple-mobile-web-app-status-bar" content="#90cdf4" />

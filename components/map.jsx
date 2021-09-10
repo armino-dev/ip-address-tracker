@@ -46,11 +46,11 @@ export default class Map extends React.Component {
                     whenCreated={this.setMap}
                 >
                     <TileLayer
-                        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        attribution='&copy; <a href="http://osm.org/copyright" rel="noreferrer">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     <TileLayer 
-                        attribution='&copy; <a href="https://armino.dev" target="_blank" rel="no-follow" title="A sample site made by Armino">Made by Armino</a>'
+                        attribution='&copy; <a href="https://armino.dev" target="_blank" rel="noreferrer" title="A sample site made by Armino">Made by Armino</a>'
                         url="https://armino.dev"
                     />
                     <Marker position={position} icon={marker} >
