@@ -17,19 +17,19 @@ export default class Info extends React.Component {
                 >
                     <div className="flex flex-col h-full items-center lg:items-start lg:border-r lg:px-5 lg:w-1/4">
                         <h2 className="text-gray-500 font-bold tracking-wider text-[10px] mb-1 lg:text-[14px]">IP ADDRESS</h2>
-                        <p className="font-bold tracking-wide lg:text-[22px]">{ip}</p>
+                        <p className="font-bold tracking-wide lg:text-[22px] text-center lg:text-left">{ip}</p>
                     </div>
                     <div className="flex flex-col h-full items-center lg:items-start lg:border-r lg:px-5 lg:w-1/4">
                         <h2 className="text-gray-500 font-bold tracking-wider text-[10px] lg:text-[14px] mb-1">LOCATION</h2>
-                        <p className="font-bold tracking-wide lg:text-[22px]">{location}</p>
+                        <p className="font-bold tracking-wide lg:text-[22px] text-center lg:text-left">{location}</p>
                     </div>
                     <div className="flex flex-col h-full items-center lg:items-start lg:border-r lg:px-5 lg:w-1/4">
                         <h2 className="text-gray-500 font-bold tracking-wider text-[10px] lg:text-[14px] mb-1">TIMEZONE</h2>
-                        <p className="font-bold tracking-wide lg:text-[22px]">{timezone}</p>
+                        <p className="font-bold tracking-wide lg:text-[22px] text-center lg:text-left">{timezone}</p>
                     </div>
                     <div className="flex flex-col items-center lg:items-start lg:px-5 lg:w-1/4">
                         <h2 className="text-gray-500 font-bold tracking-wider text-[10px] lg:text-[14px] mb-1">ISP</h2>
-                        <p className="font-bold tracking-wide lg:text-[22px]">{isp}</p>
+                        <p className="font-bold tracking-wide lg:text-[22px] text-center lg:text-left">{isp}</p>
                     </div>
                 </div>
             </div>

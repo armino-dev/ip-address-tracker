@@ -10,7 +10,6 @@ export default class Info extends React.Component {
         this.state = {
             ipAddress: '',
             canSearch: false,
-            geoLocation: null,
         }
 
         this.handleChange = this.handleChange.bind(this)
