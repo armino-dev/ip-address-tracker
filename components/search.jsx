@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import iconArrow from '../public/icon-arrow.svg'
 import { validateIpv4 } from '../helpers/validation'
-import fetch from 'node-fetch'
+//import fetch from 'node-fetch'
 
 export default class Info extends React.Component {
     constructor(props) {
