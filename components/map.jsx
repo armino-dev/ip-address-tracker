@@ -16,13 +16,13 @@ export default class Map extends React.Component {
         this.setMap = this.setMap.bind(this)
     }
 
-    componentDidUpdate() {
-        //this.state.map.setView(this.props.position)
+    componentDidUpdate(prevProps) {
+        this.state.map.flyTo(this.props.position)
     }
 
     setMap(map) {
         this.setState({
-            map
+            map: map.target
         })
     }
 
@@ -43,7 +43,7 @@ export default class Map extends React.Component {
                     style={{ height: "100%", width: "100%" }}
                     className="z-10"
                     zoomControl={false}
-                    whenCreated={this.setMap}
+                    whenReady={this.setMap}
                 >
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright" rel="noreferrer">OpenStreetMap</a> contributors'
