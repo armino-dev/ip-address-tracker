@@ -13,9 +13,12 @@ async function getIpInfo(ip) {
         return {error: 'Invalid IP address format.'}
     }
 
-    const res = await fetch(endpoint)
-
-    return await res.json()
+    try {
+        const res = await fetch(endpoint)
+        return await res.json()
+    } catch (e) {
+        console.log(e)
+    }
 }
 
 async function getAPILimit() {

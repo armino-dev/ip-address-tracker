@@ -17,7 +17,7 @@ export default class Map extends React.Component {
     }
 
     componentDidUpdate() {
-        this.state.map.setView(this.props.position)
+        //this.state.map.setView(this.props.position)
     }
 
     setMap(map) {
